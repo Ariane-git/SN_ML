@@ -1,0 +1,6 @@
+{
+  "meilleur_modele": "overfit",
+  "raison": "Accuracy test la plus elevee entre les deux modeles Naive Bayes (underfit vs overfit)",
+  "accuracy_test_underfit": 0.4,
+  "accuracy_test_overfit": 0.4814504881450488
+}
