@@ -1,0 +1,178 @@
+{
+  "nom": "Naive Bayes - Sur-ajuste (Overfit)",
+  "features": [
+    "carat",
+    "depth",
+    "table",
+    "price",
+    "x",
+    "y",
+    "z",
+    "color_enc",
+    "clarity_enc",
+    "volume",
+    "price_per_carat",
+    "carat2",
+    "depth_table",
+    "carat_clarity",
+    "carat_color"
+  ],
+  "var_smoothing": 1e-15,
+  "n_train": 30,
+  "n_test": 10755,
+  "accuracy_train": 0.8333333333333334,
+  "accuracy_test": 0.4814504881450488,
+  "ecart_train_test": 0.35188284518828455,
+  "classification_report": {
+    "Fair": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 319.0
+    },
+    "Good": {
+      "precision": 0.3294701986754967,
+      "recall": 0.2034764826175869,
+      "f1-score": 0.2515802781289507,
+      "support": 978.0
+    },
+    "Very Good": {
+      "precision": 0.2303206997084548,
+      "recall": 0.29453189726594864,
+      "f1-score": 0.2584984548263952,
+      "support": 2414.0
+    },
+    "Premium": {
+      "precision": 0.42475799354649457,
+      "recall": 0.5271204950855479,
+      "f1-score": 0.47043534762833006,
+      "support": 2747.0
+    },
+    "Ideal": {
+      "precision": 0.771545827633379,
+      "recall": 0.6562718175471259,
+      "f1-score": 0.7092555331991952,
+      "support": 4297.0
+    },
+    "accuracy": 0.4814504881450488,
+    "macro avg": {
+      "precision": 0.351218943912765,
+      "recall": 0.33628013850324184,
+      "f1-score": 0.33795392275657427,
+      "support": 10755.0
+    },
+    "weighted avg": {
+      "precision": 0.49840619739783315,
+      "recall": 0.4814504881450488,
+      "f1-score": 0.484427494937517,
+      "support": 10755.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      0,
+      30,
+      185,
+      103,
+      1
+    ],
+    [
+      0,
+      199,
+      331,
+      349,
+      99
+    ],
+    [
+      0,
+      211,
+      711,
+      971,
+      521
+    ],
+    [
+      0,
+      95,
+      990,
+      1448,
+      214
+    ],
+    [
+      0,
+      69,
+      870,
+      538,
+      2820
+    ]
+  ],
+  "cut_order": [
+    "Fair",
+    "Good",
+    "Very Good",
+    "Premium",
+    "Ideal"
+  ],
+  "color_order": [
+    "J",
+    "I",
+    "H",
+    "G",
+    "F",
+    "E",
+    "D"
+  ],
+  "clarity_order": [
+    "I1",
+    "SI2",
+    "SI1",
+    "VS2",
+    "VS1",
+    "VVS2",
+    "VVS1",
+    "IF"
+  ],
+  "exploration_taille_echantillon": [
+    {
+      "n_train": 30,
+      "accuracy_train": 0.8333333333333334,
+      "accuracy_test": 0.4814504881450488,
+      "ecart": 0.35188284518828455
+    },
+    {
+      "n_train": 50,
+      "accuracy_train": 0.66,
+      "accuracy_test": 0.49428172942817294,
+      "ecart": 0.1657182705718271
+    },
+    {
+      "n_train": 80,
+      "accuracy_train": 0.725,
+      "accuracy_test": 0.5324035332403533,
+      "ecart": 0.1925964667596467
+    },
+    {
+      "n_train": 120,
+      "accuracy_train": 0.5916666666666667,
+      "accuracy_test": 0.4759646675964668,
+      "ecart": 0.1157019990701999
+    },
+    {
+      "n_train": 200,
+      "accuracy_train": 0.54,
+      "accuracy_test": 0.497629009762901,
+      "ecart": 0.04237099023709906
+    },
+    {
+      "n_train": 400,
+      "accuracy_train": 0.595,
+      "accuracy_test": 0.5225476522547652,
+      "ecart": 0.07245234774523479
+    },
+    {
+      "n_train": 800,
+      "accuracy_train": 0.60125,
+      "accuracy_test": 0.5558344955834496,
+      "ecart": 0.0454155044165504
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "nom": "Naive Bayes - Sous-ajuste (Underfit)",
+  "features": [
+    "color_enc",
+    "clarity_enc"
+  ],
+  "var_smoothing": 1.0,
+  "n_train": 43020,
+  "n_test": 10755,
+  "accuracy_train": 0.399674569967457,
+  "accuracy_test": 0.4,
+  "ecart_train_test": -0.00032543003254303926,
+  "classification_report": {
+    "Fair": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 319.0
+    },
+    "Good": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 978.0
+    },
+    "Very Good": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 2414.0
+    },
+    "Premium": {
+      "precision": 0.4,
+      "recall": 0.002184200946487077,
+      "f1-score": 0.004344677769732078,
+      "support": 2747.0
+    },
+    "Ideal": {
+      "precision": 0.4,
+      "recall": 0.9997672794973237,
+      "f1-score": 0.5713905699275121,
+      "support": 4297.0
+    },
+    "accuracy": 0.4,
+    "macro avg": {
+      "precision": 0.16,
+      "recall": 0.20039029608876216,
+      "f1-score": 0.11514704953944885,
+      "support": 10755.0
+    },
+    "weighted avg": {
+      "precision": 0.26198047419804743,
+      "recall": 0.4,
+      "f1-score": 0.22940028905736623,
+      "support": 10755.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      0,
+      0,
+      0,
+      7,
+      312
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      977
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      2414
+    ],
+    [
+      0,
+      0,
+      0,
+      6,
+      2741
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      4296
+    ]
+  ],
+  "cut_order": [
+    "Fair",
+    "Good",
+    "Very Good",
+    "Premium",
+    "Ideal"
+  ],
+  "color_order": [
+    "J",
+    "I",
+    "H",
+    "G",
+    "F",
+    "E",
+    "D"
+  ],
+  "clarity_order": [
+    "I1",
+    "SI2",
+    "SI1",
+    "VS2",
+    "VS1",
+    "VVS2",
+    "VVS1",
+    "IF"
+  ]
+}
